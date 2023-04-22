@@ -9,8 +9,8 @@ const Logo = () => {
       alt="logo"
       height="100"
       width="100"
-      className="hidden md:block cursor-pointer"
-      src='/images/logo.png'
+      className="hidden cursor-pointer md:block"
+      src="/images/logo.png"
     />
   );
 };

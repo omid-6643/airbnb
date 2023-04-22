@@ -1,7 +1,6 @@
-'use client'
+"use client";
 
-import Image from "next/image"
-
+import Image from "next/image";
 
 const Avatar = () => {
   return (
@@ -13,6 +12,6 @@ const Avatar = () => {
       src="/images/placeholder.jpg"
     />
   );
-}
+};
 
-export default Avatar
+export default Avatar;
