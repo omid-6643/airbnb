@@ -36,19 +36,18 @@ const LoginModal = () => {
     setIsLoading(true);
 
     signIn("credentials", { ...data, redirect: false }).then((callback) => {
-      setIsLoading(false)
+      setIsLoading(false);
 
-      if(callback?.ok) {
-        toast.success('Logged in')
-        router.refresh()
-        loginModal.onClose()
+      if (callback?.ok) {
+        toast.success("Logged in");
+        router.refresh();
+        loginModal.onClose();
       }
 
-      if(callback?.error) {
-        toast.error(callback.error)
- 
+      if (callback?.error) {
+        toast.error(callback.error);
       }
-    })
+    });
   };
 
   const bodyContent = (
@@ -81,13 +80,13 @@ const LoginModal = () => {
         outline
         label="Continue with Google"
         icon={FcGoogle}
-        onClick={() => console.log("google")}
+        onClick={() => signIn('google')}
       />
       <Button
         outline
         label="Continue with Github"
         icon={AiFillGithub}
-        onClick={() => console.log("google")}
+        onClick={() => signIn("github")}
       />
       <div className="mt-4 text-center font-light text-neutral-500">
         <div className="flex flex-row justify-center gap-2 text-center">
