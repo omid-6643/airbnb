@@ -1,3 +1,5 @@
+"use client";
+
 import { IconType } from "react-icons";
 
 import { useRouter, useSearchParams } from "next/navigation";
@@ -24,7 +26,6 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
     if (params) {
       currentQuery = qs.parse(params.toString());
     }
-
     const updatedQuery: any = {
       ...currentQuery,
       category: label,
