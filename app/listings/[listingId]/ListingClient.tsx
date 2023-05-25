@@ -6,9 +6,8 @@ import { Range } from "react-date-range";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { differenceInCalendarDays, eachDayOfInterval } from "date-fns";
-import { Reservation } from "@prisma/client";
 
-import { SafeUser, safeListings } from "@/app/types";
+import { SafeReservation, SafeUser, safeListings } from "@/app/types";
 
 import Container from "@/app/components/Container";
 import { categories } from "@/app/components/navbar/Categories";
@@ -25,7 +24,7 @@ const initialDateRange = {
 };
 
 interface ListingClientProps {
-  reservations?: Reservation[];
+  reservations?: SafeReservation[];
   listing: safeListings & {
     user: SafeUser;
   };
