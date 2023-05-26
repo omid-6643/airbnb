@@ -26,8 +26,8 @@ export default async function getListingById(params: IParams) {
       createdAt: listing.createdAt.toISOString(),
       user: {
         ...listing.user,
-        createAt: listing.user.createAt.toISOString(),
-        updateAt: listing.user.updateAt.toISOString(),
+        createdAt: listing.user.createdAt.toISOString(),
+        updatedAt: listing.user.updatedAt.toISOString(),
         emailVerified: listing.user.emailVerified?.toISOString() || null,
       },
     };

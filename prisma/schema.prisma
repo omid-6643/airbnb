@@ -17,8 +17,8 @@ model User {
   emailVerified  DateTime?
   image          String?
   hashedPassword String?
-  createAt       DateTime  @default(now())
-  updateAt       DateTime  @updatedAt
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
   favoriteIds    String[]  @db.ObjectId
 
   accounts     Account[]
@@ -34,7 +34,7 @@ model Account {
   providerAccountId String
   refresh_token     String? @db.String
   access_token      String? @db.String
-  expire_at         Int?
+  expires_at        Int?
   token_type        String?
   scope             String?
   id_token          String? @db.String
@@ -59,8 +59,7 @@ model Listing {
   userId        String   @db.ObjectId
   price         Int
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
+  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade)
   reservations Reservation[]
 }
 
