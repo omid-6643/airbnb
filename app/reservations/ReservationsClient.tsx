@@ -5,9 +5,9 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
-import Container from "../components/Container";
-import Heading from "../components/Heading";
-import ListingCard from "../components/listings/ListingCard";
+import Container from "@/components/Container";
+import Heading from "@/components/Heading";
+import ListingCard from "@/components/listings/ListingCard";
 
 import { SafeReservation, SafeUser } from "../types";
 
