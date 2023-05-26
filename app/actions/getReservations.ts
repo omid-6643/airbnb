@@ -27,7 +27,7 @@ export default async function getReservations(params: IParams) {
           listing: true,
         },
         orderBy: {
-          createAt: "desc",
+          createdAt: "desc",
         },
       });
 
@@ -37,8 +37,8 @@ export default async function getReservations(params: IParams) {
       startDate: reservation.startDate.toISOString(),
       endDate: reservation.endDate.toISOString(),
       listing: {
-        ...reservation.Listing,
-        createdAt: reservation.Listing.createdAt.toISOString(),
+        ...reservation.listing,
+        createdAt: reservation.listing.createdAt.toISOString(),
       },
     }));
 
