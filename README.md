@@ -1,6 +1,10 @@
 # Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth 2023
 
+![Screenshot](screenshot.png)
+
 This is a repository for a Full Stack Airbnb Clone: React, Tailwind, Prisma, MongoDB, NextAuth.
+
+ "[(https://airbnb-dmm6.vercel.app/)]"
 
 Features:
 
