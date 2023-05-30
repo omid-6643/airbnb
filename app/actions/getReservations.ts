@@ -6,6 +6,8 @@ interface IParams {
   authorId?: string;
 }
 
+export const dynamic = "force-static";
+
 export default async function getReservations(params: IParams) {
   try {
     const { listingId, userId, authorId } = params;

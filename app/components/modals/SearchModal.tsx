@@ -20,7 +20,7 @@ enum STEPS {
   DATE = 1,
   INFO = 2,
 }
-
+// export const dynamic = "force-static";
 const SearchModal = () => {
   const router = useRouter();
   const params = useSearchParams();

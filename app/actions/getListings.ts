@@ -11,6 +11,9 @@ export interface IListingsParams {
   category?: string;
 }
 
+export const dynamic = "force-static";
+
+
 export default async function getListings(params: IListingsParams) {
   try {
     const {

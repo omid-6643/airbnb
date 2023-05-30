@@ -11,7 +11,7 @@ interface CategoryBoxProps {
   label: string;
   selected?: boolean;
 }
-
+export const dynamic = "force-static";
 const CategoryBox: React.FC<CategoryBoxProps> = ({
   icon: Icon,
   label,

@@ -6,7 +6,7 @@ import { differenceInDays } from "date-fns";
 import { useSearchParams } from "next/navigation";
 import { useMemo } from "react";
 import { BiSearch } from "react-icons/bi";
-
+export const dynamic = "force-static";
 const Search = () => {
   const searchModal = useSearchModal();
   const params = useSearchParams();

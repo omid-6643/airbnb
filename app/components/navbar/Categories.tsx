@@ -95,7 +95,7 @@ export const categories = [
     description: "This property is luxurious!",
   },
 ];
-
+export const dynamic = "force-static";
 const Categories = () => {
   const params = useSearchParams();
   const category = params?.get("category");
